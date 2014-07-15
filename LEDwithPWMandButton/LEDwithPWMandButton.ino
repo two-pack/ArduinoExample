@@ -18,7 +18,7 @@ void turnOffLED()
 
 void setup() {
   pinMode(LED, OUTPUT);
-  pinMode(BUTTON, OUTPUT);
+  pinMode(BUTTON, INPUT);
 }
 
 void loop() {
