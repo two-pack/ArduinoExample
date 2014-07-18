@@ -1,3 +1,5 @@
+const int LED = 13;
+
 void turnOnLED() {
-  digitalWrite(13, HIGH);
+  digitalWrite(LED, HIGH);
 }

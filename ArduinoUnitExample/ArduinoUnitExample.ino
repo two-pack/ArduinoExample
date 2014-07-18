@@ -1,12 +1,14 @@
 #include <ArduinoUnit.h>
 
+extern const int LED;
+
 test(turn_on_LED) {
-  pinMode(13, OUTPUT);
-  digitalWrite(13, LOW);
+  pinMode(LED, OUTPUT);
+  digitalWrite(LED, LOW);
   
   turnOnLED();
   
-  assertEqual(HIGH, digitalRead(13));
+  assertEqual(HIGH, digitalRead(LED));
 }
 
 void setup() {
