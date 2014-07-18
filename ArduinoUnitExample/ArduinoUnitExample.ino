@@ -3,6 +3,10 @@
 
 void setup() {
   Serial.begin(9600);
+#ifdef TEST
+#else
+  initLED();
+#endif
 }
 
 void loop() {
@@ -10,5 +14,8 @@ void loop() {
   Test::run();
 #else
   turnOnLED();
+  delay(250);
+  turnOffLED();
+  delay(250);
 #endif
 }
