@@ -13,9 +13,6 @@ void loop() {
 #ifdef TEST
   Test::run();
 #else
-  turnOnLED();
-  delay(250);
-  turnOffLED();
-  delay(250);
+  blinkLED();
 #endif
 }

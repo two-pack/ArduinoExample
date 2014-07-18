@@ -11,3 +11,10 @@ void turnOffLED() {
 void initLED() {
   pinMode(LED, OUTPUT);
 }
+
+void blinkLED() {
+  turnOnLED();
+  delay(250);
+  turnOffLED();
+  delay(250);
+}
